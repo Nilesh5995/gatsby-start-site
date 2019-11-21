@@ -4,6 +4,7 @@ module.exports = {
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
+  pathPrefix: "/gatsby-start-site",
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -12,7 +13,24 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+
     },
+    {
+      resolve: `gatsby-theme-blog`,
+      options: {
+        /*
+        - basePath defaults to `/`
+        - contentPath defaults to `content/posts`
+        - assetPath defaults to `content/assets`
+        - mdx defaults to `true`
+        */
+        basePath: `/blog`,
+        contentPath: `content/blogPosts`,
+        assetPath: `content/blogAssets`,
+        mdx: false,
+      }
+    },
+    
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
