@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{fSlq:function(c,t,l){"use strict";l.r(t);l("q1tI");var e=l("qKvR");t.default=function(){return Object(e.c)("div",{style:{color:"purple"}},Object(e.c)("h1",null,"Hello Gatsby!"),Object(e.c)("p",null,"What a world."),Object(e.c)("img",{src:"https://source.unsplash.com/random/400x200",alt:""}))}}}]);
+//# sourceMappingURL=component---src-pages-start-js-3d3691ed44511af592af.js.map
